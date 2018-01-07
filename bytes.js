@@ -1,9 +1,8 @@
 var crypto = require('crypto')
+var buf32 = require('./buf32')
 
 module.exports = bytes
 
 function bytes (size) {
-  return crypto
-    .randomBytes(size)
-    .toString('hex')
+  return buf32(crypto.randomBytes(size))
 }

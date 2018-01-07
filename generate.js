@@ -13,5 +13,5 @@ function generate () {
 
 function now () {
   return Date.now()
-    .toString(16)
+    .toString(32)
 }

@@ -13,7 +13,7 @@ function verify (token) {
 }
 
 function recent (time) {
-  var ms = parseInt(time, 16)
+  var ms = parseInt(time, 32)
   if (isNaN(ms)) return false
   var diff = Date.now() - ms
   var mins = diff / 1000 / 60
